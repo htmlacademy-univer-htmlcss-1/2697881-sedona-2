@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header class="catalog-header">
+    <header class="catalog-header" data-test="header">
       <nav class="header-nav">
         <a class="header-logo"
           ><img
@@ -89,9 +89,10 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+
+    <main class="main-container main-inner" data-test="main">
+      <section class="filter" data-test="filter">
+        <h1 class="filter-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
@@ -252,8 +253,9 @@
             <button class="button button-reset" type="reset">Сбросить</button>
           </div>
         </form>
-      </header>
-      <section class="catalog-products">
+      </section>
+
+      <section class="catalog-products" data-test="catalog">
         <div class="catalog-products-sort">
           <p class="select-result">Найдено гостиниц: 38</p>
           <div class="select-wrapper">
@@ -401,7 +403,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribtion">
+      <section class="subscribtion" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на расслку</h2>
 
         <b class="find-hotel-title">Подпишитесь на рассылку!</b>
@@ -429,7 +431,7 @@
         </form>
       </section>
     </main>
-    <footer class="catalog-footer">
+    <footer class="catalog-footer" data-test="footer">
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">

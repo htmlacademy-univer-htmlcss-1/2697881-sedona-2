@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="index-header">
+    <header class="index-header" data-test="header">
       <nav class="header-nav">
         <a class="header-logo"
           ><img
@@ -92,20 +92,23 @@
       </nav>
     </header>
 
-    <main class="index-main">
+    <main class="index-main" data-test="main">
       <h1 class="visually-hidden">Город Сенора</h1>
       <img class="logo" src="#" alt="Логотип города Сенора" />
 
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <b class="advantages-title">
+      <section class="hero" data-test="hero">
+        <h2 class="visually-hidden">Слоган</h2>
+        <b class="hero-title">
           Седона — небольшой городок в Аризоне, <br />
           заслуживающий большего!
         </b>
-        <p class="advantages-bridge">
+        <p class="hero-bridge">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
 
+      </section>
+      <section class="advantages" data-test="advantages">
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="advantages-list">
           <li class="advantages-element">
             <h3 class="advantages-element-header">Настоящий городок</h3>
@@ -300,7 +303,7 @@
         </ul>
       </section>
 
-      <section class="find-hotel">
+      <section class="find-hotel" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
 
         <b class="find-hotel-title"> Заинтересовались? </b>
@@ -313,7 +316,7 @@
         </a>
       </section>
 
-      <section class="subscribtion">
+      <section class="subscribtion" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на расслку</h2>
 
         <b class="find-hotel-title">Подпишитесь на рассылку!</b>
@@ -342,7 +345,7 @@
       </section>
     </main>
 
-    <footer class="index-footer">
+    <footer class="index-footer" data-test="footer">
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
