@@ -197,3 +197,155 @@ body {
   color: #000000;
   text-decoration: underline;
 }
+
+/*Внутренняя страница*/
+
+.inner-header {
+  background-image: url("../images/catalog-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-apply {
+  background-color: #82B3D3;
+}
+
+.button-clear {
+  background-color: transparent;
+}
+
+.select-result {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-view-list {
+  list-style-type: none;
+}
+
+.product-card {
+  width: 340px;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.product-card-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-prise {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+}
+
+.product-card-prise-mark {
+  font-weight: normal;
+}
+
+.product-button-favorite {
+  background-color: #82B3D3;
+}
+
+.product-rating-list {
+  list-style-type: none;
+}
+
+.product-rating-current {
+  background-color: #F2F2F2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.pagination {
+  list-style-type: none;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-ellipsis {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.inner-subscription {
+  background-image: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.inner-subscription-description {
+  color: #333333;
+}
