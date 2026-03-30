@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img
           class="navigation-img"
@@ -45,8 +45,8 @@
         <a class="button sign-link" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main class="main-inner">
-      <header class="inner-header">
+    <main class="main-inner" data-test="main">
+      <header class="inner-header" data-test=" filter">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -143,7 +143,7 @@
           <button class="button button-clear" type="reset">Сбросить</button>
         </form>
       </header>
-      <section class="catalog-products">
+      <section class="catalog-products" data-test="catalog">
         <p class="select-result">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
@@ -313,7 +313,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscription inner-subscription">
+      <section class="subscription inner-subscription" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description inner-subscription-description">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -338,7 +338,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
