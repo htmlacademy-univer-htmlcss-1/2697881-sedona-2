@@ -14,17 +14,107 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-blue {
+  background-color: #82b3d3;
+}
+
+.button-green {
+  background-color: #7db54f;
+}
+
+.button-find {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756157;
+}
+
+.button-subscription {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82b3d3;
+}
+
+.button-transparent {
+  background-color: transparent;
+}
+
+.button-rating {
+  background-color: #f2f2f2;
+  font-weight: 400;
+  color: #333333;
+}
+
+.button-pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82b3d3;
+}
+
+.button-pagination-current {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.pagination-ellipsis {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-right: 30px;
 }
 
 .navigation-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 440px;
+}
+
+.navigation-user {
+  width: 320px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -32,37 +122,41 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-decoration: none;
 }
 
-.button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #756157;
-  text-align: center;
-}
-
-.sign-link {
-  color: #FFFFFF;
+.main-container {
+  flex-grow: 1;
 }
 
 .welcome {
-  background-image: url("../images/divider.svg"), url("../images/index-hero.jpg");
-  background-position: center bottom, center;
+  background-image:
+    url("../images/divider.svg"), url("../images/index-hero.jpg");
+  background-position:
+    center bottom,
+    center;
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 485px;
+}
+
+.welcome-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.slogan {
+  text-align: center;
+  padding: 0 258px;
 }
 
 .slogan-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .slogan-description {
@@ -74,18 +168,33 @@ body {
 
 .advantages-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  display: flex;
+}
+
+.advantage-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
 }
 
 .advantage-item:nth-child(1) {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantage-item:nth-child(1) .advantage-title {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantage-item:nth-child(1) .advantage-description {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantage-item:nth-child(2) {
@@ -101,15 +210,15 @@ body {
 }
 
 .advantage-item:nth-child(5) {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantage-item:nth-child(5) .advantage-title {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantage-item:nth-child(5) .advantage-description {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantage-item:nth-child(6) {
@@ -117,7 +226,7 @@ body {
 }
 
 .advantage-item:nth-child(7) {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .advantage-item:nth-child(8) {
@@ -136,66 +245,94 @@ body {
   font-weight: 400;
   text-align: center;
   color: #333333;
+  padding: 0 85px;
+}
+
+.find {
+  text-align: center;
+  padding: 0 304px;
 }
 
 .find-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .find-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #333333;
 }
 
 .subscription {
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
   height: 414px;
+  text-align: center;
+  padding: 0 258px;
 }
 
 .subscription-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .subscription-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
-.subscription-form {
-  text-align: center;
+.page-footer {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 200px;
 }
 
 .footer-social-list {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-item {
+  width: 48px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: block;
+  padding: 12px 12px;
 }
 
 .footer-contacts-address {
   font-style: normal;
+  width: 350px;
+  text-align: center;
 }
 
 .footer-phone {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.footer-link {
+  width: 115px;
 }
 
 /*Внутренняя страница*/
@@ -205,25 +342,55 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
+  padding: 35px 70px 70px 70px;
 }
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .breadcrumbs {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-group {
+  border: 0 none;
+}
+
+.catalog-filter-left {
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
+}
+
+.catalog-filter-right {
+  display: flex;
+  width: 549px;
+  justify-content: space-between;
+}
+
+.filter-send-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-title {
@@ -234,6 +401,8 @@ body {
 
 .catalog-filter-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .control {
@@ -242,22 +411,37 @@ body {
   line-height: 23px;
 }
 
-.button-apply {
-  background-color: #82B3D3;
+.catalog-products-sort {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
 }
 
-.button-clear {
-  background-color: transparent;
+.select-control {
+  width: 292px;
+  margin-right: auto;
 }
 
 .select-result {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-right: 200px;
 }
 
 .catalog-view-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-list {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
 }
 
 .product-card {
@@ -293,57 +477,33 @@ body {
   font-weight: normal;
 }
 
-.product-button-favorite {
-  background-color: #82B3D3;
-}
-
 .product-rating-list {
   list-style-type: none;
 }
 
-.product-rating-current {
-  background-color: #F2F2F2;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-}
-
 .pagination {
   list-style-type: none;
+  padding: 0;
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
   width: 60px;
   height: 60px;
+  margin-right: 8px;
 }
 
-.pagination-link {
-  font-size: 20px;
-  line-height: 36px;
-  background-color: #82B3D3;
-  text-decoration: none;
-}
-
-.pagination-current {
-  background-color: #F2F2F2;
-  color: #000000;
-}
-
-.pagination-ellipsis {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-  background-color: #FFFFFF;
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .inner-subscription {
   background-image: none;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .inner-subscription-description {
