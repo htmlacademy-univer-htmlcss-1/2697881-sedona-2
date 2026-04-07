@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="#">
           <img
@@ -45,9 +45,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container main-index">
+    <main class="main-container main-index" data-test="main">
       <h1 class="visually-hidden">Сайт поиска гостиниц "Седона"</h1>
-      <section class="welcome">
+      <section class="welcome" data-test="hero">
         <h2 class="visually-hidden">Добро пожаловать на сайт "Седона"</h2>
         <img
           class="welcome-logo"
@@ -65,7 +65,7 @@
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantage-item">
@@ -149,7 +149,7 @@
           </li>
         </ul>
       </section>
-      <section class="find">
+      <section class="find" data-test="search">
         <h2 class="find-title">Заинтересовались?</h2>
         <p class="find-description">
           Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
@@ -157,7 +157,7 @@
         </p>
         <a class="button button-find" href="#">Поиск гостиницы в седоне</a>
       </section>
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe" data-test="footer">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -184,7 +184,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" >
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
